@@ -1,3 +1,4 @@
+from typing import Text
 from flask import Flask, request, abort
 
 from linebot import (
@@ -66,6 +67,9 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     elif '功能列表' in msg:
         message = function_list()
+        line_bot_api.reply_message(event.reply_token, message)
+    elif  '陳威' in msg:
+        message=TextSendMessage(text='yyds')
         line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=msg)
