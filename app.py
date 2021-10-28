@@ -74,6 +74,9 @@ def handle_message(event):
     elif  '功能' in msg:
         message=TextSendMessage(text='最新合作廠商\n最新活動訊息\n註冊會員\n旋轉木馬\n圖片畫廊')
         line_bot_api.reply_message(event.reply_token, message)
+    elif '將這個訊息偷偷回傳給機器人' in msg:
+        message=TextSendMessage(text='收到')
+        line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=msg)
         line_bot_api.reply_message(event.reply_token, message)
