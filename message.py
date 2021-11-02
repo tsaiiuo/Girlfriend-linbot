@@ -87,6 +87,10 @@ def Confirm_Template():
         template=ConfirmTemplate(
             text="吃早餐了嗎 ヽ(=^･ω･^=)丿",
             actions=[
+                {
+                   "type": "text",
+                "text": "早安ㄚ 寶寶今天也很想你喔ฅ●ω●ฅ'"
+                },
                 PostbackTemplateAction(
                     label="有",
                     text="(๑• . •๑) 那就好",

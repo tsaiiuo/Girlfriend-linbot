@@ -72,11 +72,12 @@ def handle_message(event):
         message=TextSendMessage(text='最新合作廠商\n最新活動訊息\n註冊會員\n旋轉木馬\n圖片畫廊')
         line_bot_api.reply_message(event.reply_token, message)
     elif '早安' in msg:
-        message=TextSendMessage(text=f'早安ㄚ 寶寶今天也很想你喔ฅ●ω●ฅ')
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '早安' in msg:
         message = Confirm_Template()
         line_bot_api.reply_message(event.reply_token, message)
+    elif '早安' in msg:
+        message=TextSendMessage(text=f'早安ㄚ 寶寶今天也很想你喔ฅ●ω●ฅ')
+        line_bot_api.reply_message(event.reply_token, message)
+    
     else:
         message = TextSendMessage(text=msg)
         line_bot_api.reply_message(event.reply_token, message)
