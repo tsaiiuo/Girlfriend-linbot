@@ -75,11 +75,7 @@ def handle_message(event):
         message=TextSendMessage(text='最新合作廠商\n最新活動訊息\n註冊會員\n旋轉木馬\n圖片畫廊')
         line_bot_api.reply_message(event.reply_token, message)
     elif '早安' in msg:
-        uid = event.joined.members[0].user_id
-        gid = event.source.group_id
-        profile = line_bot_api.get_group_member_profile(gid, uid)
-        name = profile.display_name
-        message=TextSendMessage(text=f'{name}早安ㄚ 寶寶今天也很想你喔ฅ●ω●ฅ')
+        message=TextSendMessage(text=f'早安ㄚ 寶寶今天也很想你喔ฅ●ω●ฅ')
         line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=msg)
