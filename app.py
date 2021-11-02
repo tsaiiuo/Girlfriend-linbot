@@ -80,6 +80,12 @@ def handle_message(event):
     elif '河內塔' in msg:
         message=TextSendMessage(text=f'河內塔Java版<3\nhttps://github.com/tsaiiuo/HanoiStack_java')
         line_bot_api.reply_message(event.reply_token, message)
+    elif '還沒' in msg:
+        message = TextSendMessage(text='現在 立刻 馬上(／‵Д′)／~ ╧╧')
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '有' in msg:
+        message = TextSendMessage(text='(๑• . •๑) 那就好')
+        line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=msg)
         line_bot_api.reply_message(event.reply_token, message)

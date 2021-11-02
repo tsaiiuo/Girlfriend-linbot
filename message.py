@@ -90,12 +90,12 @@ def Confirm_Template():
             actions=[
                 PostbackTemplateAction(
                     label="有",
-                    text="(๑• . •๑) 那就好",
+                    text="有",
                     data="會員註冊"
                 ),
                 MessageTemplateAction(
                     label="還沒",
-                    text="現在、立刻、馬上(／‵Д′)／~ ╧╧"
+                    text="還沒"
                 )
             ]
         )
