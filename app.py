@@ -79,9 +79,7 @@ def handle_message(event):
         gid = event.source.group_id
         profile = line_bot_api.get_group_member_profile(gid, uid)
         name = profile.display_name
-        message=TextSendMessage(text=f'{name}早安ㄚ～～')
-        line_bot_api.reply_message(event.reply_token, message)
-        message=TextSendMessage(text=f'春風如夢風過無痕，只為心的思念，遙寄一份濃濃思念。寶寶，給我一個輕輕的早安吻。')
+        message=TextSendMessage(text=f'{name}早安ㄚ 寶寶今天也很想你喔ฅ●ω●ฅ')
         line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=msg)
