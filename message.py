@@ -83,18 +83,18 @@ def buttons_message():
 def Confirm_Template():
 
     message = TemplateSendMessage(
-        alt_text='是否註冊成為會員？',
+        alt_text='吃早餐了嗎？',
         template=ConfirmTemplate(
-            text="是否註冊成為會員？",
+            text="吃早餐了嗎 ヽ(=^･ω･^=)丿",
             actions=[
                 PostbackTemplateAction(
-                    label="馬上註冊",
-                    text="現在、立刻、馬上",
+                    label="有",
+                    text="(๑• . •๑) 那就好",
                     data="會員註冊"
                 ),
                 MessageTemplateAction(
-                    label="查詢其他功能",
-                    text="查詢其他功能"
+                    label="還沒",
+                    text="現在、立刻、馬上(／‵Д′)／~ ╧╧"
                 )
             ]
         )
