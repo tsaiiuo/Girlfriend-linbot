@@ -56,7 +56,7 @@ def handle_message(event):
     elif '最新活動訊息' in msg:
         message = buttons_message()
         line_bot_api.reply_message(event.reply_token, message)
-    elif '調情' in msg:
+    elif '' in msg:
         message = Confirm_Template()
         line_bot_api.reply_message(event.reply_token, message)
     elif '旋轉木馬' in msg:
@@ -76,11 +76,8 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     elif '早安' in msg:
         message=TextSendMessage(text=f'早安ㄚ 寶寶今天也很想你喔ฅ●ω●ฅ')
+        message+=Confirm_Template()
         line_bot_api.reply_message(event.reply_token, message)
-        message1=TextSendMessage(text=f'吃早餐了嗎？')
-        line_bot_api.reply_message(event.reply_token, message1)
-        message2 = Confirm_Template()
-        line_bot_api.reply_message(event.reply_token, message2)
     else:
         message = TextSendMessage(text=msg)
         line_bot_api.reply_message(event.reply_token, message)
