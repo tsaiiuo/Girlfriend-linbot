@@ -82,8 +82,8 @@ def buttons_message():
 #TemplateSendMessage - ConfirmTemplate(確認介面訊息)
 def Confirm_Template():
 
-    message=TextSendMessage(text='早安ㄚ 寶寶今天也很想你喔ฅ●ω●ฅ')
-    message =message+TemplateSendMessage(
+
+    message =TextSendMessage(text='早安ㄚ 寶寶今天也很想你喔ฅ●ω●ฅ')+TemplateSendMessage(
         alt_text='吃早餐了嗎？',
         template=ConfirmTemplate(
             text="吃早餐了嗎 ヽ(=^･ω･^=)丿",
