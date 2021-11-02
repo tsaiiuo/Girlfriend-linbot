@@ -77,10 +77,10 @@ def handle_message(event):
     elif '早安' in msg:
         message=TextSendMessage(text=f'早安ㄚ 寶寶今天也很想你喔ฅ●ω●ฅ')
         line_bot_api.reply_message(event.reply_token, message)
-        message=TextSendMessage(text=f'吃早餐了嗎？')
-        line_bot_api.reply_message(event.reply_token, message)
-        message = Confirm_Template()
-        line_bot_api.reply_message(event.reply_token, message)
+        message1=TextSendMessage(text=f'吃早餐了嗎？')
+        line_bot_api.reply_message(event.reply_token, message1)
+        message2 = Confirm_Template()
+        line_bot_api.reply_message(event.reply_token, message2)
     else:
         message = TextSendMessage(text=msg)
         line_bot_api.reply_message(event.reply_token, message)
