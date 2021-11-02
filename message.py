@@ -83,7 +83,7 @@ def buttons_message():
 def Confirm_Template():
 
 
-    message =TextSendMessage(text='早安ㄚ 寶寶今天也很想你喔ฅ●ω●ฅ')+TemplateSendMessage(
+    message =TemplateSendMessage(
         alt_text='吃早餐了嗎？',
         template=ConfirmTemplate(
             text="吃早餐了嗎 ヽ(=^･ω･^=)丿",
