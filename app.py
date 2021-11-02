@@ -77,6 +77,9 @@ def handle_message(event):
     elif '早餐' in msg:
         message = Confirm_Template()
         line_bot_api.reply_message(event.reply_token, message)
+    elif '河內塔' in msg:
+        message=TextSendMessage(text=f'河內塔Java版<3\nhttps://github.com/tsaiiuo/HanoiStack_java')
+        line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=msg)
         line_bot_api.reply_message(event.reply_token, message)
