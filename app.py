@@ -1,3 +1,4 @@
+from email.headerregistry import Address
 from typing import Text
 from flask import Flask, request, abort
 
@@ -84,7 +85,9 @@ def handle_message(event):
         message = TextSendMessage(text='現在 立刻 馬上(／‵Д′)／~ ╧╧')
         line_bot_api.reply_message(event.reply_token, message)
     elif '有' in msg:
-        message = TextSendMessage(text='(๑• . •๑) 那就好')
+        message = LocationSendMessage(title: "臺北車站",
+        address: "台灣台北市中正區北平西路3號100臺灣",latitude: 25.047702,
+        longitude: 121.517373)
         line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=msg)
