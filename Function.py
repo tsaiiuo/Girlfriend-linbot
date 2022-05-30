@@ -153,16 +153,16 @@ def function_list():
                 ),
                 CarouselColumn(
                     thumbnail_image_url='https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-1/p320x320/50934385_2553136691368417_7766092240367124480_n.jpg?_nc_cat=109&_nc_ht=scontent-sjc3-1.xx&oh=c144a6b45450781ccaf258beb40bc53e&oe=5D228BF1',
-                    title='聯繫Maso本人',
-                    text='直接聯繫Maso',
+                    title='聯繫Ian本人',
+                    text='直接聯繫Ian',
                     actions=[
                         MessageTemplateAction(
-                            label='誰是Maso?',
-                            text='Maso是誰？想認識'
+                            label='誰是Ian?',
+                            text='Ian是誰？想認識'
                         ),
                         URITemplateAction(
                             label='加我的LINE',
-                            uri='https://line.me/ti/p/KeRocPY6PP'
+                            uri=''
                         )
                     ]
                 )
